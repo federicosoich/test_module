@@ -1,6 +1,6 @@
 <?php
 
-namespace MagePsycho\CustomShipping\Block\System\Config\Form\Field;
+ho\CustomShipping\Block\System\Config\Form\Field;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 
