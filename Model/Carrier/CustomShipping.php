@@ -1,6 +1,21 @@
 <?php
-die("HEREEE);
 
+namespace MagePsycho\CustomShipping\Model\Carrier;
+
+use Magento\Framework\App\Config\ScopeConfigInterface;
+use Magento\Framework\DataObject;
+use Magento\Shipping\Model\Carrier\AbstractCarrier;
+use Magento\Shipping\Model\Carrier\CarrierInterface;
+use Magento\Shipping\Model\Rate\ResultFactory;
+use Magento\Quote\Model\Quote\Address\RateResult\ErrorFactory;
+use Magento\Quote\Model\Quote\Address\RateResult\Method;
+use Magento\Quote\Model\Quote\Address\RateResult\MethodFactory;
+use Magento\Quote\Model\Quote\Address\RateRequest;
+use Psr\Log\LoggerInterface;
+
+/**
+ * @category   MagePsycho
+ * @package    MagePsycho_CustomShipping
  * @author     magepsycho@gmail.com
  * @website    https://www.magepsycho.com
  */
